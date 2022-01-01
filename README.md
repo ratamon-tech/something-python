@@ -60,3 +60,7 @@ Operations to perform:
 Running migrations:
   Applying learning_logs.0001_initial... OK
 ```
+
+- スーパーユーザーを設定
+
+`python manage.py createsuperuser`
