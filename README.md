@@ -24,3 +24,11 @@ Pyhonでなんか作る
 - プロジェクトを作成
 
 `django-admin startproject learning_log .`
+
+- データベース作成
+
+`python manage.py migrate`
+
+- プロジェクトの状態確認
+
+`python manage.py runserver`
