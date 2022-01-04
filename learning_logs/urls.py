@@ -7,5 +7,7 @@ from . import views
 app_name = 'learning_logs'
 urlpatterns = [
     # ホームページ
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    # 全てのトピックを表示するページ
+    path('topics/', views.topics, name='topics'),
 ]
