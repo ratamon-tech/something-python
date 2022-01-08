@@ -64,3 +64,18 @@ Running migrations:
 - スーパーユーザーを設定
 
 `python manage.py createsuperuser`
+
+
+## Djangoシェルの利用
+
+- シェル起動
+
+`python manage.py shell`
+
+ - 使用例
+ ```sh
+ (InteractiveConsole)
+>>> from learning_logs.models import Topic
+>>> Topic.objects.all()
+<QuerySet [<Topic: チェス>, <Topic: ロッククライミング>]>
+ ```
