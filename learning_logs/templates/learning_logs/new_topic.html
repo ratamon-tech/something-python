@@ -3,7 +3,7 @@
 {% block content %}
     <p>新規トピックを追加: </p>
 
-    <form action="{% url 'learning_logs:new_topic' %}" metod='post'>
+    <form action="{% url 'learning_logs:new_topic' %}" method='post'>
         {% csrf_token %}
         {{ form.as_p }}
         <button name="submit">トピックを追加</button>
