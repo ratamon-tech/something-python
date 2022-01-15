@@ -73,9 +73,38 @@ Running migrations:
 `python manage.py shell`
 
  - 使用例
+
  ```sh
  (InteractiveConsole)
 >>> from learning_logs.models import Topic
 >>> Topic.objects.all()
 <QuerySet [<Topic: チェス>, <Topic: ロッククライミング>]>
  ```
+
+ ## DBのマイグレーション実行
+
+ - マイグレーションファイル作成
+
+ `python manage.py makemigrations learning_logs`
+
+<details><summary>実行例</summary>
+<pre>
+(v_env) ~/workspace/something-python $python manage.py makemigrations learning_logs
+It is impossible to add a non-nullable field 'owner' to topic without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> 1
+Migrations for 'learning_logs':
+  learning_logs/migrations/0003_topic_owner.py
+    - Add field owner to topic
+</pre>
+</details>
+
+- マイグレーション実行
+
+`python manage.py migrate`
