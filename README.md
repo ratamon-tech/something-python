@@ -108,3 +108,7 @@ Migrations for 'learning_logs':
 - マイグレーション実行
 
 `python manage.py migrate`
+
+## django-bootstrap4のインストール
+
+`pip install django-bootstrap4 `

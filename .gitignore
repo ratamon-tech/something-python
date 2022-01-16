@@ -2,3 +2,4 @@ db.sqlite3
 learning_log/__pycache__/*
 learning_logs/__pycache__/*
 learning_logs/migrations/__pycache__/*
+v_env/lib/*
