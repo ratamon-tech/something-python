@@ -3,3 +3,4 @@ learning_log/__pycache__/*
 learning_logs/__pycache__/*
 learning_logs/migrations/__pycache__/*
 v_env/lib/*
+v_env/bin/*
