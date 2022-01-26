@@ -6,10 +6,6 @@
 
 {% block content %}
 
-    <p>トピック : {{ topic  }}</p>
-
-    <p>記事:</p>
-
     <p>
         <a href="{% url 'learning_logs:new_entry' topic.id %}">新しい記事を追加</a>
     </p>
